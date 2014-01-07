@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <cs50.h>
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ **/
+int main(void)
+{
+    printf("    * Welcome To MARIO'S MOUNTAIN *\n");
+    printf("Enter a number from 0 to 23 for height: ");
+    int n = GetInt();
+    int height = n;
+    do
+    {
+        n = GetInt();
+        if ( n <=23 )
+            break;
+    }
+    
+    while ( n >= 23 || n <= 0 );
+    
+    for (int i = 0; i < height; i++)
+    {
+        printf("##\n"); 
+    }
+    
+ 
